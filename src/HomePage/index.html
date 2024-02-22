@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com "></script>
+    <title>Document</title>
+  </head>
+
+  <body class="bg-gray-100">
+    <div>
+      <!-- Navbar -->
+      <header
+        class="container mx-auto lg:w-4/5 border-gray-200 dark:bg-gray-900"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="index.html"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img src="/assets/logo.png" class="h-12" alt="Flowbite Logo" />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >CSTAD - Library</span
+            >
+          </a>
+          <div class="flex md:order-2">
+            <button
+              type="button"
+              data-collapse-toggle="navbar-search"
+              aria-controls="navbar-search"
+              aria-expanded="false"
+              class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1"
+            >
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+              <span class="sr-only">Search</span>
+            </button>
+            <div class="relative hidden md:block">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+                <span class="sr-only">Search icon</span>
+              </div>
+              <input
+                type="text"
+                id="search-navbar"
+                class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search..."
+              />
+            </div>
+            <button
+              data-collapse-toggle="navbar-search"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-search"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-search"
+          >
+            <div class="relative mt-3 md:hidden">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="search-navbar"
+                class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search..."
+              />
+            </div>
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Services</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- Container -->
+      <main class="container mx-auto lg:w-3/4">
+        <section>
+          <div
+            class="grid max-w-screen-xl px-4 sm:px-8 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28"
+          >
+            <div class="mr-auto place-self-center lg:col-span-7">
+              <h1
+                class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl dark:text-white"
+              >
+                CSTAD - Library
+              </h1>
+              <p
+                class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+              >
+                This is a page that provides various information related to IT
+                studies. In addition to that, it includes source code and a
+                collection of images from CSTAD students. It is noteworthy that
+                this special section contains information related to short
+                courses.
+              </p>
+              <div class="mt-10 sm:mt-8 sm:flex">
+                <button class="rounded-md shadow">
+                  <a
+                    href=""
+                    class="text-indigo-700 border border-indigo-600 hover:bg-indigo-500 hover:text-white py-4 px-6 rounded inline-flex items-center"
+                  >
+                    Get Started
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      class="w-6 h-6 ml-2"
+                    >
+                      <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+              <img src="/assets/mian_page.png" alt="hero image" />
+            </div>
+          </div>
+        </section>
+
+        <!-- sub card -->
+        <div
+          class="grid grid-cols-1 gap-4 px-4 mt-8 sm:grid-cols-2 md:grid-cols-3 sm:px-8"
+        >
+          <a href="">
+            <div
+              class="flex items-center bg-white border rounded-md overflow-hidden shadow"
+            >
+              <div class="p-3">
+                <img class="h-14" src="/assets/icon_pdf.png" alt="" />
+              </div>
+              <div class="text-gray-700 px-4">
+                <h3 class="text-lg tracking-wider">Document PDF</h3>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div
+              class="flex items-center bg-white border rounded-md overflow-hidden shadow"
+            >
+              <div class="p-3 lg:p-2">
+                <img class="h-16" src="/assets/icon_code.png" alt="" />
+              </div>
+              <div class="px-4 text-gray-700">
+                <h3 class="text-lg tracking-wider">Source Code</h3>
+              </div>
+            </div>
+          </a>
+          <a href="../PhotoPage/photo_page.html">
+            <div
+              class="flex items-center bg-white border rounded-md overflow-hidden shadow"
+            >
+              <div class="p-3">
+                <img class="h-16" src="/assets/icon_image.png" alt="" />
+              </div>
+              <div class="px-4 text-gray-700">
+                <h3 class="text-lg tracking-wider">Photo Memery</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- card box -->
+        <section class="py-12 text-gray-900 sm:py-12 lg:py-16">
+          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="max-w-xl mx-auto text-center xl:max-w-2xl">
+              <h2
+                class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl mb-6"
+              >
+                We are just getting started!
+              </h2>
+              <p class="mb-4">
+                We are creating a tool that helps you be more productive and
+                efficient when building websites and webapps
+              </p>
+            </div>
+            <div
+              id="card"
+              class="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 gap-5 sm:gap-5"
+            ></div>
+          </div>
+        </section>
+      </main>
+
+      <!-- FAQ -->
+      <section class="py-7 bg-gray-50 sm:py-16 lg:py-24">
+        <div class="px-4 mx-auto sm:px-6 lg:px-8">
+          <div class="mx-auto text-center">
+            <h2
+              class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
+            >
+              Explore Common Questions
+            </h2>
+          </div>
+          <div class="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
+            <div
+              class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50"
+            >
+              <button
+                type="button"
+                id="question1"
+                data-state="closed"
+                class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+              >
+                <span class="flex text-lg font-semibold text-black"
+                  >what is center of science and technology advanced department
+                  ?</span
+                >
+                <svg
+                  id="arrow1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-gray-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                id="answer1"
+                style="display: none"
+                class="px-4 pb-5 sm:px-6 sm:pb-6"
+              >
+                <p>
+                  CSTAD is a noteworthy science and technology center in
+                  Cambodia. CSTAD has routed Cambodian students to advanced
+                  science and technology, research, and develop digital skills
+                  and our graduates have been guaranteed excellent job
+                  opportunities with the Top IT company. CSTAD will continue to
+                  provide high-quality training with the latest methodology, and
+                  roadmap as well as the best choice for those who want to be an
+                  IT expert in Cambodia.
+                </p>
+              </div>
+            </div>
+            <div
+              class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50"
+            >
+              <button
+                type="button"
+                id="question2"
+                data-state="closed"
+                class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+              >
+                <span class="flex text-lg font-semibold text-black"
+                  >What tutorials does this website offer ?</span
+                >
+                <svg
+                  id="arrow2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-gray-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                id="answer2"
+                style="display: none"
+                class="px-4 pb-5 sm:px-6 sm:pb-6"
+              >
+                <p>
+                  This website provides various tutorials, including Python,
+                  Java, Intro to Programming, UI/UX Design, Flutter, Web, App,
+                  Hacking, and many more.
+                </p>
+              </div>
+            </div>
+            <div
+              class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50"
+            >
+              <button
+                type="button"
+                id="question2"
+                data-state="closed"
+                class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+              >
+                <span class="flex text-lg font-semibold text-black"
+                  >If you have any question, please feel free to contact us.
+                </span>
+                <svg
+                  id="arrow3"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-gray-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                id="answer3"
+                style="display: none"
+                class="px-4 pb-5 sm:px-6 sm:pb-6"
+              >
+                <p>
+                  No. 24, St. 562, Sangkat Boeung kak I, Khan Toul Kork, Phnom
+                  Penh, Cambodia <br />
+                  (+855) 95 990 910 | (+855) 93 990 910<br />
+                  info.istad@gmail.com<br />
+                  www.istad.co
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-gray-600 textbase mt-9">
+            Still have questions?
+            <span
+              class="cursor-pointer font-medium text-tertiary transition-all duration-200 hover:text-tertiary focus:text-tertiary hover-underline"
+              >Contact our support
+            </span>
+          </p>
+        </div>
+        <script>
+          // JavaScript to toggle the answers and rotate the arrows
+          document
+            .querySelectorAll('[id^="question"]')
+            .forEach(function (button, index) {
+              button.addEventListener("click", function () {
+                var answer = document.getElementById("answer" + (index + 1));
+                var arrow = document.getElementById("arrow" + (index + 1));
+
+                if (
+                  answer.style.display === "none" ||
+                  answer.style.display === ""
+                ) {
+                  answer.style.display = "block";
+                  arrow.style.transform = "rotate(0deg)";
+                } else {
+                  answer.style.display = "none";
+                  arrow.style.transform = "rotate(-180deg)";
+                }
+              });
+            });
+        </script>
+      </section>
+
+      <!-- footer -->
+      <footer class="dark:bg-gray-900">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <a
+              href=""
+              class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+            >
+              <img src="/assets/logo.png" class="h-8" alt="Flowbite Logo" />
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+                >Flowbite</span
+              >
+            </a>
+            <ul
+              class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+            >
+              <li>
+                <a href="#" class="hover:underline me-4 md:me-6">About</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline me-4 md:me-6"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <hr
+            class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+          />
+          <span
+            class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >© 2023
+            <a href="https://flowbite.com/" class="hover:underline"
+              >CSTAD - Library</a
+            >. All Rights Reserved.</span
+          >
+        </div>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
